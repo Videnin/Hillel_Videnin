@@ -7,10 +7,9 @@
 
 countries = ['USA', 'China', 'Italy']
 capitals = {
-    'USA' : 'Washington',
-    'China' : 'Pekin',
-    'Italy' : 'Rome'
-
+    countries[0]: 'Washington',
+    countries[1]: 'Pekin',
+    countries[2]: 'Rome'
 }
 for country in countries:
     print(country + ': ' + capitals[country])
