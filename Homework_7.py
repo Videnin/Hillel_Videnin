@@ -1,5 +1,7 @@
-side = 7
-for i in range(side):
-    print(" "*(side-i-1) + "*"*(2*i+1))
+side = 5
+for i in range(1, side+1):
+    spaces = ' '*(side-i)
+    stars = '*'*i
+    print(spaces + stars)
 
 
