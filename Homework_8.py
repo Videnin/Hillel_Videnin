@@ -1,14 +1,17 @@
-min_width = 2
-max_width = 8
+min_width = int(input("Введите минимальную ширину: "))
+max_width = int(input("Введите максимальную ширину: "))
 
-if (max_width - min_width) % 2 != 0:
+if min_width > max_width:
+    print("Ошибка! Минимальная ширина больше максимальной.")
+elif (max_width - min_width) % 2 != 0:
+    print("Ошибка! Разность максимальной и минимальной ширины не кратна 2.")
 else:
+    diamond_width = max_width
+    diamond_height = diamond_width // 2 + 1
 
-    if min_width > max_width:
-    else:
-        for i in range(min_width, max_width + 1, 2):
-            print(" " * ((max_width - i) // 2) + "*" * i)
-        for i in range(max_width - 2, min_width - 1, -2):
-            print(" " * ((max_width - i) // 2) + "*" * i)
+    for i in range(1, diamond_height):
+        print(" " * (diamond_height - i) + "*" * (i * 2 - 1))
 
+    for i in range(diamond_height, 0, -1):
+        print(" " * (diamond_height - i) + "*" * (i * 2 - 1))
 
