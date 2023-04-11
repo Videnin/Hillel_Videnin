@@ -1,4 +1,4 @@
-multi_string = "Hello all. Here's pretty cold and hot. Choose yourself."
+multi_string = "Hello all. Here's pretty cold and hot. Choose yourself"
 sentences = multi_string.split('.')
 word_counts = []
 for sentence in sentences:
