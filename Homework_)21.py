@@ -28,4 +28,4 @@ with open('users_out.txt', 'w') as txt_file:
         name = user['name']
         age = user['age'] if user['age'] is not None else ''
         phones = ', '.join(user['phones']) if len(user['phones']) > 0 else ''
-        txt_file.write(f"{name};{age};{phones}\n")
+        txt_file.write(f"{name};{age};{phones}\n")xx
